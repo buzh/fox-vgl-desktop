@@ -9,7 +9,7 @@ From: rockylinux:9.3
  dnf config-manager --set-enabled epel,appstream,crb
  dnf -y groupinstall "Xfce" "base-x" "Development Tools"
  dnf -y install nvidia-driver-libs ristretto egl-utils mesa-libEGL xcb-util-wm-devel pulseaudio-libs-glib2 xcb-util-image-devel xcb-util-keysyms-devel xcb-util-renderutil-devel mesa-dri-drivers nmap-ncat python3-websockify lua-devel lua-posix lua-filesystem tcl-devel libnsl mesa-libGLU libxcb-devel libxkbcommon-devel SDL2 SDL2-devel SDL2_net firefox vim emacs strace libvpx libvpx-devel compat-openssl11 dbus-x11
- dnf -y install http://10.110.0.1/install/repos/otherpkgs-el9/VirtualGL-3.1.x86_64.rpm
+ dnf -y install <repository URL>/otherpkgs-el9/VirtualGL-3.1.x86_64.rpm
  dnf -y install https://yum.osc.edu/ondemand/latest/compute/el9/x86_64/turbovnc-2.2.5-1.el9.x86_64.rpm
  dnf -y remove xfce4-screensaver
 
